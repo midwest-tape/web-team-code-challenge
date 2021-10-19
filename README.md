@@ -1,2 +1,3 @@
 # web-team-code-challenge
-Created with CodeSandbox
+
+A WIP coding challenge built with code sandbox for calabirative coding challenge
