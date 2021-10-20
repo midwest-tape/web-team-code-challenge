@@ -1,9 +1,35 @@
 .App {
-  font-family: sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #1b1b1b;
+}
+
+header {
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.heading {
+  margin-bottom: 1px;
+}
+.sub-heading {
+  margin: 0;
+  color: #444;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
+}
+
+.nav {
+  padding: 0 20px;
+  list-style: none;
+}
+
+.navItem {
+  margin-bottom: 5px;
+}
+
+.main {
+  padding: 0 20px;
 }
