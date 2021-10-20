@@ -73,9 +73,19 @@ header {
   margin: 0 5px;
   cursor: pointer;
 }
+.button:disabled {
+  cursor: disabled;
+  background-color: #888;
+  border: 1px solid #888;
+}
 
 .button:hover {
   background-color: #0b3c6e;
+}
+.button:disabled:hover {
+  cursor: disabled;
+  background-color: #666;
+  border: 1px solid #666;
 }
 
 .text-input {
@@ -103,4 +113,16 @@ header {
 
 .todo:nth-child(odd) {
   background-color: #f2f2f2;
+}
+
+/* Challenge 3 */
+.person {
+  margin-top: 35px;
+}
+.person > h3 {
+  margin-bottom: 6px;
+}
+
+.person > p {
+  margin: 2px 0;
 }
