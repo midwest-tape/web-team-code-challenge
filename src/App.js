@@ -4,7 +4,12 @@ import Challenge3 from "./challenges/Challenge3";
 import Challenge4 from "./challenges/Challenge4";
 import Challenge5 from "./challenges/Challenge5";
 
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink as Link
+} from "react-router-dom";
 import Home from "./Home";
 import "./styles.css";
 
@@ -19,22 +24,64 @@ export default function App() {
         <div className="wrapper">
           <ul className="nav">
             <li className="navItem">
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                className="link"
+                activeClassName="active-link"
+                exact="true"
+              >
+                Home
+              </Link>
             </li>
             <li className="navItem">
-              <Link to="/challenge1">Challenge 1</Link>
+              <Link
+                to="/challenge1"
+                className="link"
+                activeClassName="active-link"
+                exact="true"
+              >
+                Challenge 1
+              </Link>
             </li>
             <li className="navItem">
-              <Link to="/challenge2">Challenge 2</Link>
+              <Link
+                to="/challenge2"
+                className="link"
+                activeClassName="active-link"
+                exact="true"
+              >
+                Challenge 2
+              </Link>
             </li>
             <li className="navItem">
-              <Link to="/challenge3">Challenge 3</Link>
+              <Link
+                to="/challenge3"
+                className="link"
+                activeClassName="active-link"
+                exact="true"
+              >
+                Challenge 3
+              </Link>
             </li>
             <li className="navItem">
-              <Link to="/challenge4">Challenge 4</Link>
+              <Link
+                to="/challenge4"
+                className="link"
+                activeClassName="active-link"
+                exact="true"
+              >
+                Challenge 4
+              </Link>
             </li>
             <li className="navItem">
-              <Link to="/challenge5">Challenge 5</Link>
+              <Link
+                to="/challenge5"
+                className="link"
+                activeClassName="active-link"
+                exact="true"
+              >
+                Challenge 5
+              </Link>
             </li>
           </ul>
           <main className="main">

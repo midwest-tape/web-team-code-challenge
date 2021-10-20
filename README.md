@@ -21,4 +21,4 @@ A Props Related bug
 
 ## Challenge 5
 
-We need to added a new field to a table with data from a public api
+We need to add a new field to a table with data from a public api
