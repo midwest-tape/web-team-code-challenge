@@ -1,7 +1,10 @@
 import React from "react";
 
 /*
-  A Challenge where when a button click isn't showing the appropriate action?
+  Find the bug in this component
+  
+  After the user enters their name clicking the "Send Alert" button
+  should display an alert greeting the user.
 */
 export default function Challenge1() {
   const [name, setName] = React.useState("");
@@ -12,7 +15,13 @@ export default function Challenge1() {
 
   return (
     <>
-      <h2 className="challenge-header">Challenge 1</h2>
+      <div className="challenge-header">
+        <h2>Challenge 1</h2>
+        <p>
+          After the user enters their name clicking the "Send Alert" button
+          should display an alert greeting the user.
+        </p>
+      </div>
       <div className="challenge-content">
         <input
           type="text"
@@ -21,7 +30,7 @@ export default function Challenge1() {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <button className="button" onClick={onButtonClick()}>
+        <button className="button" onClick={onButtonClick}>
           Send Alert
         </button>
       </div>
