@@ -11,7 +11,6 @@ export default function Challenge3() {
   const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
-    console.log("using that effect");
     setLoading(true);
     try {
       fetch(`https://swapi.dev/api/people/${personNumber}`).then((response) => {
@@ -50,7 +49,11 @@ export default function Challenge3() {
         >
           Next
         </button>
-        {loading ? <div>LOADING</div> : person && <Person person={person} />}
+        {loading ? (
+          <div className="loading">LOADING</div>
+        ) : (
+          person && <Person person={person} />
+        )}
       </div>
     </>
   );

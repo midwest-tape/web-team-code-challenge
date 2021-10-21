@@ -116,9 +116,14 @@ header {
 }
 
 /* Challenge 3 */
+.loading {
+  margin-top: 35px;
+}
+
 .person {
   margin-top: 35px;
 }
+
 .person > h3 {
   margin-bottom: 6px;
 }
