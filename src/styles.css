@@ -131,3 +131,34 @@ header {
 .person > p {
   margin: 2px 0;
 }
+
+/* Challenge 7 */
+.characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 10px;
+}
+
+.character {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.character img {
+  width: 100%;
+}
+
+.content {
+  padding: 5px;
+}
+
+.content h3 {
+  margin: 0;
+  margin-bottom: 3px;
+}
+
+.content p {
+  margin: 0 0 2px;
+}
