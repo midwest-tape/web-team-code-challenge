@@ -5,7 +5,7 @@ import React from "react";
    When the user selects either the previous or next button
    we should go and fetch a new person and display it to the user.
 */
-export default function Challenge3() {
+export default function Challenge5() {
   const [personNumber, setPersonNumber] = React.useState(1);
   const [person, setPerson] = React.useState();
   const [loading, setLoading] = React.useState(false);
@@ -28,10 +28,9 @@ export default function Challenge3() {
   return (
     <>
       <div className="challenge-header">
-        <h2>Challenge 3</h2>
+        <h2>Challenge 5</h2>
         <p>
-          Clicking the next and previous buttons should allow the user to
-          navigate through various Star Wars characters
+          Make the logic that returns a loading state, fetches the person out of this component and create a custom hook to return that data.
         </p>
       </div>
       <div className="challenge-content">
