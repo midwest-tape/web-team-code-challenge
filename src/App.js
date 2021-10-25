@@ -18,8 +18,8 @@ export default function App() {
     <Router>
       <div className="App">
         <header>
-          <h1 className="heading">Midwest Tape Web Team</h1>
-          <h2 className="sub-heading">Code Challenge</h2>
+          <h1 className="heading text-4xl">Midwest Tape Web Team</h1>
+          <h2 className="sub-heading text-3xl">Code Challenge</h2>
         </header>
         <div className="wrapper">
           <ul className="nav">
