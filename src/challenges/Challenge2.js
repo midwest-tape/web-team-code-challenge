@@ -11,7 +11,7 @@ export default function Challenge2() {
   const [todos, setTodos] = React.useState([]);
 
   const onAddTodo = () => {
-    setTodos([...todos, todo]);
+    setTodos([todo]);
   };
 
   return (

@@ -2,6 +2,7 @@ import Challenge1 from "./challenges/Challenge1";
 import Challenge2 from "./challenges/Challenge2";
 import Challenge3 from "./challenges/Challenge3";
 import Challenge4 from "./challenges/Challenge4";
+import Challenge5 from "./challenges/Challenge5";
 
 import {
   BrowserRouter as Router,
@@ -72,6 +73,16 @@ export default function App() {
                 Challenge 4
               </Link>
             </li>
+            <li className="navItem">
+              <Link
+                to="/challenge5"
+                className="link"
+                activeClassName="active-link"
+                exact="true"
+              >
+                Challenge 5
+              </Link>
+            </li>
           </ul>
           <main className="main">
             <Switch>
@@ -86,6 +97,9 @@ export default function App() {
               </Route>
               <Route path="/challenge4">
                 <Challenge4 />
+              </Route>
+              <Route path="/challenge5">
+                <Challenge5 />
               </Route>
               <Route path="/">
                 <Home />

@@ -19,7 +19,6 @@ export default function Challenge4() {
       fetch(`https://hp-api.herokuapp.com/api/characters/students`).then(
         (response) => {
           response.json().then((json) => {
-            console.log(json);
             setCharacters(json);
             setLoading(false);
           });
@@ -42,14 +41,15 @@ export default function Challenge4() {
         </p>
         <ol>
           <li>
-            Add a comma separated list of alternate names inside a div below the
-            character name.
+            Add a comma separated list of alternate names inside a paragraph
+            below the character name.
           </li>
           <li>Add the character's ancestry in a paragraph below the house.</li>
           <li>
             Add a section for wand below everything and display the wood and
             core type.
           </li>
+          {/* add schema link */}
         </ol>
       </div>
       <div className="challenge-content">

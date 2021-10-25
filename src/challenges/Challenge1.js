@@ -10,7 +10,7 @@ export default function Challenge1() {
   const [name, setName] = React.useState("");
 
   const onButtonClick = () => {
-    alert(`Hello ${name}`);
+    console.log(`Hello ${name}`);
   };
 
   return (
@@ -20,6 +20,7 @@ export default function Challenge1() {
         <p>
           After the user enters their name clicking the "Send Alert" button
           should display an alert greeting the user.
+          {/* Change this to reflect this being logged in the console. */}
         </p>
       </div>
       <div className="challenge-content">
@@ -30,7 +31,7 @@ export default function Challenge1() {
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <button className="button" onClick={onButtonClick}>
+        <button className="button" onClick={onButtonClick()}>
           Send Alert
         </button>
       </div>
