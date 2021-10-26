@@ -1,7 +1,6 @@
 # web-team-code-challenge
 
-A WIP coding challenge built with code sandbox for calabirative coding challenge
-_some notes here about the intent of this code challenge and how to complete it_
+A coding challenge built with code sandbox for a collaborative coding challenge.
 
 ## Challenge 1
 
@@ -28,4 +27,4 @@ Add a new feature to this component
 
 ## Challenge 5
 
-Refactoring complex useEffect and state hooks to be a custom hook.
+Refactoring person fetching logic by creating a custom hook.

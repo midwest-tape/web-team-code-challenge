@@ -3,8 +3,8 @@ import React from "react";
 /*
   Find the bug in this component
   
-  After the user enters their name clicking the "Send Alert" button
-  should display an alert greeting the user.
+  After the user enters their name clicking the "Log to console" button
+  should display a log in the console below greeting the user.
 */
 export default function Challenge1() {
   const [name, setName] = React.useState("");
@@ -18,9 +18,8 @@ export default function Challenge1() {
       <div className="challenge-header">
         <h2>Challenge 1</h2>
         <p>
-          After the user enters their name clicking the "Send Alert" button
-          should display an alert greeting the user.
-          {/* Change this to reflect this being logged in the console. */}
+          After the user enters their name clicking the "Log to console" button
+          should display a log in the console below greeting the user.
         </p>
       </div>
       <div className="challenge-content">
@@ -32,7 +31,7 @@ export default function Challenge1() {
           onChange={(e) => setName(e.target.value)}
         />
         <button className="button" onClick={onButtonClick()}>
-          Send Alert
+          Log to console
         </button>
       </div>
     </>

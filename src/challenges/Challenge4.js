@@ -3,7 +3,7 @@ import React from "react";
 /*
   Add a new feature to this component
   
-  1. Add a comma separated list of alternate names inside a div below the characted name.
+  1. Add a comma separated list of alternate names inside a div below the character name.
   2. Add the character's ancestry in a paragraph below the house.
   3. Add a section for wand below everything and display the wood and core type.
 

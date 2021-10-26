@@ -2,8 +2,8 @@ import React from "react";
 /*
    Find the bug in this component
   
-   When the user selects either the previous or next button
-   we should go and fetch a new person and display it to the user.
+   We would like to reuse the logic to fetch a person other places in our app.
+  Create a custom hook that encapsulates the fetching logic as well as the state management of the current person and loading.
 */
 export default function Challenge5() {
   const [personNumber, setPersonNumber] = React.useState(1);
@@ -30,7 +30,8 @@ export default function Challenge5() {
       <div className="challenge-header">
         <h2>Challenge 5</h2>
         <p>
-          Make the logic that returns a loading state, fetches the person out of this component and create a custom hook to return that data.
+          We would like to reuse the logic to fetch a person other places in our app.
+          Create a custom hook that encapsulates the fetching logic as well as the state management of the current person and loading.
         </p>
       </div>
       <div className="challenge-content">
