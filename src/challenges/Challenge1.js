@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 
 /*
   Find the bug in this component
@@ -15,24 +16,22 @@ export default function Challenge1() {
 
   return (
     <>
-      <div className="challenge-header">
-        <h2>Challenge 1</h2>
+      <div className="mb-10">
+        <h2 className="text-2xl mb-2">Challenge 1</h2>
         <p>
           After the user enters their name clicking the "Log to console" button
           should display a log in the console below greeting the user.
         </p>
       </div>
-      <div className="challenge-content">
+      <div>
         <input
           type="text"
-          className="text-input"
+          className="px-8 py-2 rounded shadow border border-gray-400"
           placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
-        <button className="button" onClick={onButtonClick()}>
-          Log to console
-        </button>
+        <Button onClick={onButtonClick()}>Log to console</Button>
       </div>
     </>
   );

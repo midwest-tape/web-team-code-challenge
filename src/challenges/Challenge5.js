@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 /*
    Find the bug in this component
   
@@ -27,30 +28,25 @@ export default function Challenge5() {
 
   return (
     <>
-      <div className="challenge-header">
-        <h2>Challenge 5</h2>
+      <div className="mb-10">
+        <h2 className="text-2xl mb-2">Challenge 5</h2>
         <p>
-          We would like to reuse the logic to fetch a person other places in our app.
-          Create a custom hook that encapsulates the fetching logic as well as the state management of the current person and loading.
+          We would like to reuse the logic to fetch a person other places in our
+          app. Create a custom hook that encapsulates the fetching logic as well
+          as the state management of the current person and loading.
         </p>
       </div>
       <div className="challenge-content">
-        <button
-          className="button"
+        <Button
           onClick={() => setPersonNumber(personNumber - 1)}
           disabled={personNumber === 1}
         >
           Previous
-        </button>
+        </Button>
 
-        <button
-          className="button"
-          onClick={() => setPersonNumber(personNumber + 1)}
-        >
-          Next
-        </button>
+        <Button onClick={() => setPersonNumber(personNumber + 1)}>Next</Button>
         {loading ? (
-          <div className="loading">LOADING</div>
+          <div className="mt-10">LOADING</div>
         ) : (
           person && <Person person={person} />
         )}
@@ -62,8 +58,8 @@ export default function Challenge5() {
 function Person({ person }) {
   const { name, height, hair_color, skin_color, films } = person;
   return (
-    <div className="person">
-      <h3>{name}</h3>
+    <div className="mt-10">
+      <h3 className="text-xl mb-1">{name}</h3>
       <p>height: {height}cm</p>
       <p>hair color: {hair_color}</p>
       <p>skin color: {skin_color}</p>

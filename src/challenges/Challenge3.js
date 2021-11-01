@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button";
 /*
    Find the bug in this component
   
@@ -27,30 +28,24 @@ export default function Challenge3() {
 
   return (
     <>
-      <div className="challenge-header">
-        <h2>Challenge 3</h2>
+      <div className="mb-10">
+        <h2 className="text-2xl mb-2">Challenge 3</h2>
         <p>
           Clicking the next and previous buttons should allow the user to
           navigate through various Star Wars characters
         </p>
       </div>
-      <div className="challenge-content">
-        <button
-          className="button"
+      <div>
+        <Button
           onClick={() => setPersonNumber(personNumber - 1)}
           disabled={personNumber === 1}
         >
           Previous
-        </button>
+        </Button>
 
-        <button
-          className="button"
-          onClick={() => setPersonNumber(personNumber + 1)}
-        >
-          Next
-        </button>
+        <Button onClick={() => setPersonNumber(personNumber + 1)}>Next</Button>
         {loading ? (
-          <div className="loading">LOADING</div>
+          <div className="mt-10">LOADING</div>
         ) : (
           person && <Person person={person} />
         )}
@@ -62,8 +57,8 @@ export default function Challenge3() {
 function Person({ person }) {
   const { name, height, hair_color, skin_color, films } = person;
   return (
-    <div className="person">
-      <h3>{name}</h3>
+    <div className="mt-10">
+      <h3 className="text-xl mb-1">{name}</h3>
       <p>height: {height}cm</p>
       <p>hair color: {hair_color}</p>
       <p>skin color: {skin_color}</p>

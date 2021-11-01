@@ -1,7 +1,7 @@
 {
   "name": "midwest-tape-web-team-code-challenge",
   "version": "1.0.0",
-  "description": "A code challenge for applicants for the Midwest Tape Web Team",
+  "description": "A code challenge used by the Midwest Tape web team",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {

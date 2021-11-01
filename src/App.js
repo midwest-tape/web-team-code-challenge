@@ -16,75 +16,75 @@ import "./styles.css";
 export default function App() {
   return (
     <Router>
-      <div className="App">
-        <header>
-          <h1 className="heading">Midwest Tape Web Team</h1>
-          <h2 className="sub-heading">Code Challenge</h2>
+      <div className="App text-gray-800">
+        <header className="text-center mb-4">
+          <h1 className="text-4xl">Midwest Tape Web Team</h1>
+          <h2 className="text-3xl text-gray-700">Code Challenge</h2>
         </header>
-        <div className="wrapper">
-          <ul className="nav">
-            <li className="navItem">
+        <div className="flex flex-row">
+          <ul className="px-6">
+            <li className="mb-2">
               <Link
                 to="/"
-                className="link"
-                activeClassName="active-link"
+                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
+                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
                 exact="true"
               >
                 Home
               </Link>
             </li>
-            <li className="navItem">
+            <li className="mb-2">
               <Link
                 to="/challenge1"
-                className="link"
-                activeClassName="active-link"
+                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
+                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
                 exact="true"
               >
                 Challenge 1
               </Link>
             </li>
-            <li className="navItem">
+            <li className="mb-2">
               <Link
                 to="/challenge2"
-                className="link"
-                activeClassName="active-link"
+                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
+                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
                 exact="true"
               >
                 Challenge 2
               </Link>
             </li>
-            <li className="navItem">
+            <li className="mb-2">
               <Link
                 to="/challenge3"
-                className="link"
-                activeClassName="active-link"
+                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
+                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
                 exact="true"
               >
                 Challenge 3
               </Link>
             </li>
-            <li className="navItem">
+            <li className="mb-2">
               <Link
                 to="/challenge4"
-                className="link"
-                activeClassName="active-link"
+                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
+                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
                 exact="true"
               >
                 Challenge 4
               </Link>
             </li>
-            <li className="navItem">
+            <li className="mb-2">
               <Link
                 to="/challenge5"
-                className="link"
-                activeClassName="active-link"
+                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
+                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
                 exact="true"
               >
                 Challenge 5
               </Link>
             </li>
           </ul>
-          <main className="main">
+          <main className="px-8">
             <Switch>
               <Route path="/challenge1">
                 <Challenge1 />

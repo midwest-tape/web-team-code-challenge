@@ -32,14 +32,14 @@ export default function Challenge4() {
 
   return (
     <>
-      <div className="challenge-header">
-        <h2>Challenge 4</h2>
-        <p>
+      <div className="mb-10">
+        <h2 className="text-2xl mb-2">Challenge 4</h2>
+        <p className="mb-2">
           This component will show a grid of students from the Harry Potter
           movie franchise. We would like for some new features to be added to
           this page
         </p>
-        <ol>
+        <ol className="list-inside list-decimal">
           <li>
             Add a comma separated list of alternate names inside a paragraph
             below the character name.
@@ -52,12 +52,12 @@ export default function Challenge4() {
           {/* add schema link */}
         </ol>
       </div>
-      <div className="challenge-content">
+      <div>
         {loading ? (
-          <div className="loading">LOADING</div>
+          <div className="mt-10">LOADING</div>
         ) : (
           characters.length > 0 && (
-            <div className="characters">
+            <div className="grid grid-cols-5 gap-4">
               {characters.map((c) => (
                 <Character key={c.name} character={c} />
               ))}
@@ -72,9 +72,9 @@ export default function Challenge4() {
 function Character({ character }) {
   const { name, image, house, dateOfBirth } = character;
   return (
-    <div className="character">
-      <img src={image} alt={name} className="thumb" />
-      <div className="content">
+    <div className="border border-gray-100 shadow rounded-md overflow-hidden">
+      <img src={image} alt={name} className="w-full" />
+      <div className="p-2">
         <h3>{name}</h3>
         <p>{dateOfBirth}</p>
         <p>{house}</p>
