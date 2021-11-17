@@ -19,8 +19,8 @@ export default function Challenge1() {
       <div className="mb-10">
         <h2 className="text-2xl mb-2">Challenge 1</h2>
         <p>
-          After the user enters their name clicking the "Log to console" button
-          should display a log in the console below greeting the user.
+          A greeting should be logged to the console with user's included name
+          ONLY after the user has clicked "Log to console"
         </p>
       </div>
       <div>
