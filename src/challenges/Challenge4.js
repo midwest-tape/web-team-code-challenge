@@ -58,8 +58,8 @@ export default function Challenge4() {
         ) : (
           characters.length > 0 && (
             <div className="grid grid-cols-5 gap-4">
-              {characters.map((c) => (
-                <Character key={c.name} character={c} />
+              {characters.map((c, i) => (
+                <Character key={`${c.name}-${i}`} character={c} />
               ))}
             </div>
           )

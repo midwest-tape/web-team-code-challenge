@@ -28,7 +28,7 @@ export default function App() {
                 to="/"
                 className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
                 activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact="true"
+                exact={true}
               >
                 Home
               </Link>
@@ -38,7 +38,7 @@ export default function App() {
                 to="/challenge1"
                 className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
                 activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact="true"
+                exact={true}
               >
                 Challenge 1
               </Link>
@@ -48,7 +48,7 @@ export default function App() {
                 to="/challenge2"
                 className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
                 activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact="true"
+                exact={true}
               >
                 Challenge 2
               </Link>
@@ -58,7 +58,7 @@ export default function App() {
                 to="/challenge3"
                 className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
                 activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact="true"
+                exact={true}
               >
                 Challenge 3
               </Link>
@@ -68,7 +68,7 @@ export default function App() {
                 to="/challenge4"
                 className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
                 activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact="true"
+                exact={true}
               >
                 Challenge 4
               </Link>
@@ -78,7 +78,7 @@ export default function App() {
                 to="/challenge5"
                 className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
                 activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact="true"
+                exact={true}
               >
                 Challenge 5
               </Link>

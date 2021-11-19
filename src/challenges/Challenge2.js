@@ -38,8 +38,8 @@ export default function Challenge2() {
           <h3 className="text-xl mb-1">Todos</h3>
           <div>
             {todos.length > 0 &&
-              todos.map((t) => (
-                <div className="py-1 border-b border-gray-300 odd:bg-gray-100 last:border-0">
+              todos.map((t, i) => (
+                <div key={`${t}-${i}`}className="py-1 border-b border-gray-300 odd:bg-gray-100 last:border-0">
                   {t}
                 </div>
               ))}
