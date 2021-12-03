@@ -2,10 +2,9 @@ import React from "react";
 
 /*
   Add a new feature to this component
-  
-  1. Add a comma separated list of alternate names inside a div below the character name.
-  2. Add the character's ancestry in a paragraph below the house.
-  3. Add a section for wand below everything and display the wood and core type.
+
+  1. Add the character's ancestry in a paragraph below the house.
+  2. Add a section for wand below everything and display the wood and core type.
 
   API schema for consideration http://hp-api.herokuapp.com/api/characters
 */
@@ -40,10 +39,6 @@ export default function Challenge4() {
           this page
         </p>
         <ol className="list-inside list-decimal">
-          <li>
-            Add a comma separated list of alternate names inside a paragraph
-            below the character name.
-          </li>
           <li>Add the character's ancestry in a paragraph below the house.</li>
           <li>
             Add a section for wand below everything and display the wood and
