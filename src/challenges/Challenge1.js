@@ -1,4 +1,5 @@
 import React from "react";
+import defaultImage from '../default-image.jpeg'
 
 /*
   Add a new feature to this component
@@ -39,12 +40,12 @@ export default function Challenge1() {
           this page
         </p>
         <ol className="list-inside list-decimal">
-          <li>Add the character's ancestry in a paragraph below the house.</li>
+          <li>Add the character's patronous, if one exists, in a p tag below the house.</li>
           <li>
-            Add a section for wand below everything and display the wood and
+            Add a section for wand, if the student has a wand described, with a section heading of 'wand' and display the wood and
             core type.
           </li>
-          {/* add schema link */}
+          <li>API Call for reference - https://hp-api.herokuapp.com/api/characters/students</li>
         </ol>
       </div>
       <div>
@@ -63,16 +64,19 @@ export default function Challenge1() {
     </>
   );
 }
+function addDefaultSrc(ev) {
+  ev.target.src = defaultImage
+}
 
 function Character({ character }) {
   const { name, image, house, dateOfBirth } = character;
   return (
     <div className="border border-gray-100 shadow rounded-md overflow-hidden">
-      <img src={image} alt={name} className="w-full" />
+      <img src={image} alt={name} className="w-full" onError={addDefaultSrc}/>
       <div className="p-2">
-        <h3>{name}</h3>
-        <p>{dateOfBirth}</p>
-        <p>{house}</p>
+        <h3 className="font-medium">{name}</h3>
+        <p className="text-gray-800">{dateOfBirth}</p>
+        <p className="text-gray-800">{house}</p>
       </div>
     </div>
   );

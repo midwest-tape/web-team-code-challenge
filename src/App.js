@@ -19,33 +19,28 @@ export default function App() {
           <h2 className="text-3xl text-gray-700">Code Challenge</h2>
         </header>
         <div className="flex flex-row">
-          <ul className="px-6">
+          <ul className="px-6 flex-none">
             <li className="mb-2">
               <Link
                 to="/"
-                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
-                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact={true}
+                end
+                className={({isActive}) => isActive ? "border-b border-blue-600 border-solid hover:border-blue-800" : "pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"}
               >
                 Home
               </Link>
             </li>
             <li className="mb-2">
               <Link
-                to="/challenge1"
-                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
-                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact={true}
+                to="challenge1"
+                className={({isActive}) => isActive ? "border-b border-blue-600 border-solid hover:border-blue-800" : "pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"}
               >
                 Challenge 1
               </Link>
             </li>
             <li className="mb-2">
               <Link
-                to="/challenge2"
-                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
-                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact={true}
+                to="challenge2"
+                className={({isActive}) => isActive ? "border-b border-blue-600 border-solid hover:border-blue-800" : "pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"}
               >
                 Challenge 2
               </Link>
