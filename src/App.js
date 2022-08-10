@@ -1,12 +1,9 @@
 import Challenge1 from "./challenges/Challenge1";
 import Challenge2 from "./challenges/Challenge2";
-import Challenge3 from "./challenges/Challenge3";
-import Challenge4 from "./challenges/Challenge4";
-import Challenge5 from "./challenges/Challenge5";
 
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   NavLink as Link
 } from "react-router-dom";
@@ -53,58 +50,13 @@ export default function App() {
                 Challenge 2
               </Link>
             </li>
-            <li className="mb-2">
-              <Link
-                to="/challenge3"
-                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
-                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact={true}
-              >
-                Challenge 3
-              </Link>
-            </li>
-            <li className="mb-2">
-              <Link
-                to="/challenge4"
-                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
-                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact={true}
-              >
-                Challenge 4
-              </Link>
-            </li>
-            <li className="mb-2">
-              <Link
-                to="/challenge5"
-                className="pb-0.5 text-blue-600 hover:text-blue-800 whitespace-nowrap"
-                activeClassName="border-b border-blue-600 border-solid hover:border-blue-800"
-                exact={true}
-              >
-                Challenge 5
-              </Link>
-            </li>
           </ul>
           <main className="px-8">
-            <Switch>
-              <Route path="/challenge1">
-                <Challenge1 />
-              </Route>
-              <Route path="/challenge2">
-                <Challenge2 />
-              </Route>
-              <Route path="/challenge3">
-                <Challenge3 />
-              </Route>
-              <Route path="/challenge4">
-                <Challenge4 />
-              </Route>
-              <Route path="/challenge5">
-                <Challenge5 />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path="/challenge1" element={<Challenge1 />} />
+              <Route path="/challenge2" element={<Challenge2 />} />
+              <Route path="/" element={<Home />} />
+            </Routes>
           </main>
         </div>
       </div>
