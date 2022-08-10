@@ -19,9 +19,9 @@ export default function App() {
         </header>
         <div className="flex flex-row">
           <main className="px-8">
-          <div className="mb-10">
+          <div className="mb-10 w-full">
             <p>
-              The goal of this code challenge is to create a table that represents the ending standings of a recent.
+              The goal of this code challenge is to create a table that represents the ending standings of a recent Scottish Premier League Season.
             </p>
             <h2 className="font-bold text-xl">Requirements</h2>
             <ul className="list-disc list-inside">
@@ -42,6 +42,7 @@ export default function App() {
                 </ul>
               </li>
               <li>Review the standings data in the console to see console for the dynamic data to display</li>
+              <li>Sort the results using the sort option in the <b>sort</b> state</li>
             </ul>
           </div>
             <Routes>
