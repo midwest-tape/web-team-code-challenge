@@ -10,7 +10,6 @@ import Button from "../Button";
 const secretToken = '0S09EPP1DaA8cQzlW9Fl3vTni7YrRQKxGB6rexqmd7CMxv1SYxBXGPGggeFq'
 const seasonId = '18369'
 export default function Challenge() {
-  const [sort, setSort] = React.useState("AZ");
   const [standings, setStandings] = React.useState(null);
 
   React.useEffect(() => {
@@ -31,15 +30,6 @@ export default function Challenge() {
   console.log('standings data', standings)
   return (
     <>
-      <div className="mb-2">
-        <label htmlFor="sort" className="mr-2">Sort:</label>
-        <select id="sort" className="border border-gray-400 rounded px-2 py-1" onChange={(e) => setSort(e.target.value)} value={sort}>
-          <option value="AZ">Position - AZ</option>
-          <option value="ZA">Position - ZA</option>
-          <option value="GD-AZ">Goal Differential - AZ</option>
-          <option value="GD-ZA">Goal Differential - ZA</option>
-        </select>
-      </div>
       <div>
         <table className="min-w-full divide-y divide-gray-300">
           <thead className="bg-gray-50">
