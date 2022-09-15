@@ -10,8 +10,7 @@ import {standingsData} from './standingsData'
 export default function Challenge() {
   console.log('standings data', standingsData)
   return (
-    <>
-      <div>
+    <div className="border border-gray-50 rounded-xl overflow-hidden shadow-xl">
         <table className="min-w-full divide-y divide-gray-300">
           <thead className="bg-gray-50">
             <tr>
@@ -28,18 +27,14 @@ export default function Challenge() {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
-                  {/* YOUR CODE TO RENDER TABLE CONTENTS HERE */}
-                  
-                  <SampleTableRow />
+            <SampleTableRow/> 
           </tbody>
-
         </table>
-      </div>
-    </>
+        </div>
   );
 }
 
-function SampleTableRow({data}) {
+function SampleTableRow() {
   return (
     <tr>
       <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">1</td>
