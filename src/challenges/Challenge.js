@@ -1,33 +1,14 @@
 import React from "react";
 import { ChevronUpIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid'
-
+import {standingsData} from './standingsData'
 /*
    Find the bug in this component
   
    When the user enters a todo into the text field and then clicks the "add button"
    a todo should be added to the list of todos.
 */
-const secretToken = '0S09EPP1DaA8cQzlW9Fl3vTni7YrRQKxGB6rexqmd7CMxv1SYxBXGPGggeFq'
-const seasonId = '18369'
 export default function Challenge() {
-  const [standings, setStandings] = React.useState(null);
-
-  React.useEffect(() => {
-    try {
-      fetch(`https://soccer.sportmonks.com/api/v2.0/standings/season/${seasonId}?api_token=${secretToken}`).then(
-        (response) => {
-          response.json().then((json) => {
-            const standingsData = json?.data[0]?.standings?.data
-            setStandings(standingsData)
-          });
-        }
-      );
-    } catch (e) {
-      console.log(e);
-    }
-  }, []);
-
-  console.log('standings data', standings)
+  console.log('standings data', standingsData)
   return (
     <>
       <div>
@@ -48,6 +29,7 @@ export default function Challenge() {
           </thead>
           <tbody className="divide-y divide-gray-200 bg-white">
                   {/* YOUR CODE TO RENDER TABLE CONTENTS HERE */}
+                  
                   <SampleTableRow />
           </tbody>
 
@@ -57,7 +39,7 @@ export default function Challenge() {
   );
 }
 
-function SampleTableRow() {
+function SampleTableRow({data}) {
   return (
     <tr>
       <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">1</td>
@@ -73,3 +55,5 @@ function SampleTableRow() {
     </tr>
   )
 }
+
+      
