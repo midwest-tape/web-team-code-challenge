@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import { ChevronUpIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid'
 
 /*
    Find the bug in this component
@@ -34,7 +34,7 @@ export default function Challenge() {
         <table className="min-w-full divide-y divide-gray-300">
           <thead className="bg-gray-50">
             <tr>
-              <th /> {/* NO HEADING NEEDED FOR POSITION*/}
+              <th className="sr-only">position</th>{/* NO HEADING NEEDED FOR POSITION*/}
               <th className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Team</th>
               <th className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">MP</th>
               <th className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">W</th>
