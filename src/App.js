@@ -42,7 +42,7 @@ export default function App() {
                 </ul>
               </li>
               <li>Review the standings data in the console to see console for the dynamic data to display</li>
-              <li>Sort the results using the sort option in the <b>sort</b> state</li>
+              <li>Add the ability to sort the rows by the Goals For and the points`</li>
             </ul>
           </div>
             <Routes>

@@ -1,12 +1,7 @@
 import React from "react";
 import { ChevronUpIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid'
 import {standingsData} from './standingsData'
-/*
-   Find the bug in this component
-  
-   When the user enters a todo into the text field and then clicks the "add button"
-   a todo should be added to the list of todos.
-*/
+
 export default function Challenge() {
   console.log('standings data', standingsData)
   return (
