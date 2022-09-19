@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronUpIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid'
+// import { ChevronUpIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid'
 import {standingsData} from './standingsData'
 
 export default function Challenge() {
